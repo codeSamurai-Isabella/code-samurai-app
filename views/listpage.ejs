@@ -6,14 +6,25 @@
 
     <a class="btn" href="/additem">Add New Item</a>
 
-    <div class="card">
+    <div class="card-panel cyan lighten-3">
 
     <table class="highlight">
         <tr>
-            <th>Song</th><th>Singer</th><th>Added By</th><th>Likes</th><th>Actions</th>
+            <th>Song</th><th>Singer</th><th>Added By</th>
+            <th>Link</th>
+            <th>Likes</th><th>Actions</th>
         </tr>
 
         <% items.forEach(function(item){  %>
+<tr>
+
+ <td><%=item.name%></td>
+    <td><%=item.author%></td>
+    <td><%=item.addedBy%></td>
+    <td><a href="<%=item.link%>"><%=item.link%></a></td>
+        </tr>
+
+
 
 
 
